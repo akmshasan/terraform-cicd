@@ -10,6 +10,7 @@ terraform {
 provider "google" {
   # Configuration options
   # credentials = file("terraform.json")
-  project = "learning-0165559734"
-  region  = "asia-southeast1"
+  project = var.project_id
+  region  = var.region
+  zone = var.zone
 }
